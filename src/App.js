@@ -4,7 +4,8 @@ import './App.css';
 
 class App extends Component {
 	state = {number:this.props.num}
-	addValue = ()=>{this.setState({number:this.state.number*2})}
+	addValue = ()=>
+	{this.setState({number:this.props.addValue(this.state.number)})}
   render() {
     return (
 	<div>
