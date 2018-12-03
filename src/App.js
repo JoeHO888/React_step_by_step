@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-	state = {number:0}
-	addValue = ()=>{this.setState({number:1})}
+	state = {number:this.props.num}
+	addValue = ()=>{this.setState({number:this.state.number*2})}
   render() {
     return (
 	<div>
